@@ -2,24 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* global loop:true */
+/* global loop:true, config:true */
 
 var loop = loop || {};
-loop.webapp = (function($, _, OT) {
+loop.webapp = (function($, _, OT, config) {
   "use strict";
 
-  /**
-   * Base Loop server URL.
-   *
-   * XXX: should be configurable, but how?
-   *
-   * @type {String}
-   */
   var sharedModels = loop.shared.models,
       sharedViews = loop.shared.views,
-      // XXX this one should be configurable
-      //     see https://bugzilla.mozilla.org/show_bug.cgi?id=987086
-      baseServerUrl = "http://localhost:5000";
+      baseServerUrl = config.loopServerUrl;
 
   /**
    * App router.
@@ -233,4 +224,4 @@ loop.webapp = (function($, _, OT) {
     init: init,
     WebappRouter: WebappRouter
   };
-})(jQuery, _, window.OT);
+})(jQuery, _, window.OT, config);

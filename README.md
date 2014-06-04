@@ -1,6 +1,8 @@
 Loop Client
 ===========
 
+[![Build Status](https://travis-ci.org/mozilla/loop-client.svg?branch=master)](https://travis-ci.org/mozilla/loop-client)
+
 Prerequisites
 -------------
 

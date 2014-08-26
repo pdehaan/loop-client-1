@@ -1,4 +1,4 @@
 node_modules
 content/shared/libs
 test/shared/vendor
-
+content/libs/webl10n-20130617.js

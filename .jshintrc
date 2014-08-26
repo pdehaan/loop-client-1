@@ -9,7 +9,7 @@
   "latedef" : true,   // true: Require variables to be defined before use
                       // (helps avoid hoisting bugs)
 
-  "maxlen" : 80,      // {int} Max number of characters per line
+  "maxlen" : 92,      // {int} Max number of characters per line
   "node" : true,      // Node.js
   "strict": true,     // Strict mode
   "trailing" : false, // true: Prohibit trailing whitespaces
@@ -37,6 +37,7 @@
     "mozRTCSessionDescription": false,
 
     "Backbone": false,
+    "React": false,
 
     "_": false
   }
